@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(AppConfig.of(context).appTitle),
             const Text('Hello'),
             const Text('World'),
             TextButton(
