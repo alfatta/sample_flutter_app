@@ -1,0 +1,11 @@
+flutter_icons:
+  android: false
+  ios: true
+  image_path: "assets/icons/app_icon_production.png"
+  remove_alpha_ios: true
+  web:
+    generate: false
+  windows:
+    generate: false
+  macos:
+    generate: false
