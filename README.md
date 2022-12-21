@@ -1,16 +1,34 @@
-# sample_flutter_app
+# Sample Flutter App
 
-A new Flutter project.
+A new Flutter project for learning purpose.
 
-## Getting Started
+## How To Run
 
-This project is a starting point for a Flutter application.
+### Installing dependencies
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Run project
+For VSCode, open `Run and Debug` > choose available run profile > click `Start Debugging `
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For CLI use this command
+```bash
+#  run in development environtment
+flutter run -t lib/main_development --flavor development
+
+#  run in staging environtment
+flutter run -t lib/main_staging --flavor staging
+
+#  run in production environtment
+flutter run -t lib/main_production --flavor production
+```
+
+## Changing App Icon
+
+App icon stored in `assets/icons` folder. It contain each image for each environtment. Configuration is stored in `flutter_launcher_icons-<flavor>.yaml` file. If you need to change the icon, after change in `assets/icons` check again file name with config file then run this command to generate app icon sets for all environtment.
+
+```bash
+flutter pub run flutter_launcher_icons
+```
