@@ -1,0 +1,8 @@
+{
+  "homeTitle": "Beranda",
+  "homeSubtitle": "Ini halaman beranda",
+  "homeNavigateToAbout": "Pergi ke halaman Tentang",
+  "aboutTitle": "Tentang",
+  "aboutSubtitle": "Ini halaman Tentang",
+  "aboutNavigateToHome": "Kembali ke halaman Beranda"
+}

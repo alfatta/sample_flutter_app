@@ -8,13 +8,11 @@ enum Environtment {
 
 class AppConfig extends InheritedWidget {
   final Environtment environtment;
-  final String appTitle;
 
   const AppConfig({
     Key? key,
     required Widget child,
     required this.environtment,
-    required this.appTitle,
   }) : super(key: key, child: child);
 
   static AppConfig of(BuildContext context) {

@@ -10,6 +10,11 @@ A new Flutter project for learning purpose.
 flutter pub get
 ```
 
+### Generating Localization
+```bash
+flutter gen-l10n
+```
+
 ### Run project
 For VSCode, open `Run and Debug` > choose available run profile > click `Start Debugging `
 

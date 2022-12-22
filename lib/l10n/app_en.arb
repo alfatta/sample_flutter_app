@@ -1,0 +1,8 @@
+{
+  "homeTitle": "Home",
+  "homeSubtitle": "This is home page",
+  "homeNavigateToAbout": "Go to About page",
+  "aboutTitle": "About",
+  "aboutSubtitle": "This is about page",
+  "aboutNavigateToHome": "Back to Home page"
+}

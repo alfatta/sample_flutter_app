@@ -14,19 +14,19 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About Page'),
+        title: Text(AppLocalizations.of(context)!.aboutTitle),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Hello'),
-            const Text('World'),
+            Text(AppLocalizations.of(context)!.aboutTitle),
+            Text(AppLocalizations.of(context)!.aboutSubtitle),
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: const Text("Home"),
+              child: Text(AppLocalizations.of(context)!.aboutNavigateToHome),
             ),
           ],
         ),

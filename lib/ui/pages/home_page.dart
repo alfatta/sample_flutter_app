@@ -9,20 +9,19 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: Text(AppLocalizations.of(context)!.homeTitle),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(AppConfig.of(context).appTitle),
-            const Text('Hello'),
-            const Text('World'),
+            Text(AppLocalizations.of(context)!.homeTitle),
+            Text(AppLocalizations.of(context)!.homeSubtitle),
             TextButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(AboutPage.path);
               },
-              child: const Text("About"),
+              child: Text(AppLocalizations.of(context)!.homeNavigateToAbout),
             ),
           ],
         ),
